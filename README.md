@@ -1,6 +1,54 @@
-# DaYu-Tracker
+<!-- -*-Mode: markdown;-*- -->
+<!-- $Id: 4098d4ffce45696ec3497ad9e08e712906c9d8fe $ -->
 
-This code monitors hdf5 program I/O from the Virtual Object Layer (VOL) level as well as the Vitual File Driver (VFD) level.
+
+DaYu
+=============================================================================
+
+**Home**:
+  - https://github.com/pnnl/DaYu
+  
+  - [Performance Lab for EXtreme Computing and daTa](https://github.com/perflab-exact)
+
+  - Related: 
+  [DataLife](https://github.com/pnnl/DataLife)
+  [DaYu](https://github.com/pnnl/DaYu)
+  [FlowForecaster](https://github.com/pnnl/FlowForecaster)
+
+
+**About**: 
+
+The combination of ever-growing scientific datasets and distributed workflow complexity creates I/O performance bottlenecks due to data volume, velocity, and variety. Although the increasing use of descriptive data formats (e.g., HDF5, netCDF) helps organize these datasets, it also creates obscure bottlenecks due to the need to translate high level operations into file addresses and then into low-level I/O operations.
+
+DaYu is a framework for analyzing (a) semantic relationships between logical datasets and file addresses, (b) how dataset operations translate into I/O, and (c) the combination across entire workflows. DaYu's analysis and visualization enables identification of critical bottlenecks and reasoning about remediation. With DaYu, one can extract workflow data patterns, develop insights into the behavior of data flows, and identify opportunities for both users and I/O libraries to optimize the applications.
+
+The DaYu framework comprises three primary components:
+* Data Semantic Mapper, which maps semantic datasets to I/O statistics, capturing essential data flow insights for analysis.
+* Workflow Analyzer, which groups I/O statistics by high-level data semantics and visualizes the combination as semantic dataflow graphs, to give insights into holistic data dependence for I/O accesses
+* Data Flow Diagnostics, which explores three real-world scientific workflows from distinct domains, generating visualization of dataflow and I/O semantics, revealing potential I/O improvement opportunities, and empowered with optimizations suggested by DaYu's insights
+
+[1] DaYu (e.g. "Yu the Great") refers to a legendary Chinese king credited with taming floods through water control projects
+
+
+
+**Contacts**: (_firstname_._lastname_@pnnl.gov)
+  - Meng Tang (Illinois Institute of Technology) ([www](https://scholar.google.com/citations?user=KXC9NesAAAAJ&hl=en))
+  - Nathan R. Tallent ([www](https://hpc.pnnl.gov/people/tallent)), ([www](https://www.pnnl.gov/people/nathan-tallent))
+  - Lenny Guo ([www](https://www.pnnl.gov/people/luanzheng-guo))
+
+
+**Contributors**:
+  - Meng Tang (Illinois Institute of Technology) ([www](https://scholar.google.com/citations?user=KXC9NesAAAAJ&hl=en))
+  - Lenny Guo ([www](https://www.pnnl.gov/people/luanzheng-guo))
+  - Nathan R. Tallent (PNNL) ([www](https://hpc.pnnl.gov/people/tallent)), ([www](https://www.pnnl.gov/people/nathan-tallent))
+  - Anthony Kougkas (Illinois Institute of Technology)
+  - Xian-He Sun (Illinois Institute of Technology)
+
+
+Details
+=============================================================================
+
+DaYu's Tracker monitors hdf5 program I/O from the Virtual Object Layer (VOL) level as well as the Vitual File Driver (VFD) level.
 
 
 The VOL monitors objects accesses during program, implemented with the HDF5 Passthrough VOL.
