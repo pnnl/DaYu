@@ -33,14 +33,14 @@ The DaYu framework comprises three primary components:
 
 **Contacts**: (_firstname_._lastname_@pnnl.gov)
   - Meng Tang (Illinois Institute of Technology) ([www](https://scholar.google.com/citations?user=KXC9NesAAAAJ&hl=en))
-  - Nathan R. Tallent ([www](https://hpc.pnnl.gov/people/tallent)), ([www](https://www.pnnl.gov/people/nathan-tallent))
+  - Nathan R. Tallent ([www](https://nathantallent.github.io))
   - Lenny Guo ([www](https://www.pnnl.gov/people/luanzheng-guo))
 
 
 **Contributors**:
   - Meng Tang (Illinois Institute of Technology) ([www](https://scholar.google.com/citations?user=KXC9NesAAAAJ&hl=en))
   - Lenny Guo ([www](https://www.pnnl.gov/people/luanzheng-guo))
-  - Nathan R. Tallent (PNNL) ([www](https://hpc.pnnl.gov/people/tallent)), ([www](https://www.pnnl.gov/people/nathan-tallent))
+  - Nathan R. Tallent ([www](https://nathantallent.github.io))
   - Anthony Kougkas (Illinois Institute of Technology)
   - Xian-He Sun (Illinois Institute of Technology)
 
