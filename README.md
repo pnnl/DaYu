@@ -6,12 +6,10 @@ DaYu
 =============================================================================
 
 **Home**:
-  - https://github.com/pnnl/DaYu
+  - [DaYu](https://github.com/pnnl/DaYu), 
+    part of [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
   
-  - [Performance Lab for EXtreme Computing and daTa](https://github.com/perflab-exact)
-
-  - Related: 
-  [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
+  - [Performance Lab for EXtreme Computing and daTa](https://github.com/PerfLab-EXaCT)
 
 
 **About**: 
