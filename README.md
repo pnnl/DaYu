@@ -6,8 +6,7 @@ DaYu
 =============================================================================
 
 **Home**:
-  - [DaYu](https://github.com/pnnl/DaYu), 
-    part of [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
+  - [DaYu](https://github.com/pnnl/DaYu), part of [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
   
   - [Performance Lab for EXtreme Computing and daTa](https://github.com/PerfLab-EXaCT)
 
@@ -25,7 +24,8 @@ The DaYu framework comprises three primary components:
 
 [1] DaYu (e.g. "Yu the Great") refers to a legendary Chinese king credited with taming floods through water control projects
 
-
+------------------------------------------------------------------------------
+## Contacts
 
 **Contacts**: (_firstname_._lastname_@pnnl.gov)
   - Meng Tang (Illinois Institute of Technology) ([www](https://scholar.google.com/citations?user=KXC9NesAAAAJ&hl=en))
@@ -40,7 +40,30 @@ The DaYu framework comprises three primary components:
   - Anthony Kougkas (Illinois Institute of Technology)
   - Xian-He Sun (Illinois Institute of Technology)
 
+References
+-----------------------------------------------------------------------------
+- **Overview**: Nathan R. Tallent, Meng Tang, Zhen Peng, Jesun Firoz, Luanzheng Guo, Anthony Kougkas, and Xian-He Sun. "DataFlowDrs: Automating Performance Optimization of Data Flow Within HPC Workflows." IEEE Transactions on Parallel and Distributed Systems, Vol. 37, pp. 2619-2636, December 2026. ([doi: 10.1109/TPDS.2026.3722592](https://doi.org/10.1109/TPDS.2026.3722592))
 
+* **Specific**: Meng Tang, Jaime Cernuda, Jie Ye, Luanzheng Guo, Nathan R. Tallent, Anthony Kougkas, and Xian-He Sun. "DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics." Proc. of the 2024 IEEE Conf. on Cluster Computing, CLUSTER '24, pp. 357-369, IEEE, September 2024. ([doi: 10.1109/CLUSTER59578.2024.00038](https://doi.org/10.1109/CLUSTER59578.2024.00038))
+
+- For all related references, see [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
+
+
+## License
+
+BSD 2-clause license: [README-License.txt](/README-License.txt)
+
+
+Acknowledgements
+-----------------------------------------------------------------------------
+
+This work was supported by the U.S. Department of Energy's Office of
+Advanced Scientific Computing Research:
+
+- Orchestration for Distributed & Data-Intensive Scientific Exploration
+
+
+------------------------------------------------------------------------------
 Details
 =============================================================================
 
