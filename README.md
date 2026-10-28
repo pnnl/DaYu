@@ -2,12 +2,11 @@
 <!-- $Id: 4098d4ffce45696ec3497ad9e08e712906c9d8fe $ -->
 
 
-DaYu
-=============================================================================
+# DaYu
 
 **Home**:
   - [DaYu](https://github.com/pnnl/DaYu), part of [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
-  
+
   - [Performance Lab for EXtreme Computing and daTa](https://github.com/PerfLab-EXaCT)
 
 
@@ -18,13 +17,15 @@ The combination of ever-growing scientific datasets and distributed workflow com
 DaYu is a framework for analyzing (a) semantic relationships between logical datasets and file addresses, (b) how dataset operations translate into I/O, and (c) the combination across entire workflows. DaYu's analysis and visualization enables identification of critical bottlenecks and reasoning about remediation. With DaYu, one can extract workflow data patterns, develop insights into the behavior of data flows, and identify opportunities for both users and I/O libraries to optimize the applications.
 
 The DaYu framework comprises three primary components:
-* Data Semantic Mapper, which maps semantic datasets to I/O statistics, capturing essential data flow insights for analysis.
-* Workflow Analyzer, which groups I/O statistics by high-level data semantics and visualizes the combination as semantic dataflow graphs, to give insights into holistic data dependence for I/O accesses
-* Data Flow Diagnostics, which explores three real-world scientific workflows from distinct domains, generating visualization of dataflow and I/O semantics, revealing potential I/O improvement opportunities, and empowered with optimizations suggested by DaYu's insights
+
+- Data Semantic Mapper, which maps semantic datasets to I/O statistics, capturing essential data flow insights for analysis.
+- Workflow Analyzer, which groups I/O statistics by high-level data semantics and visualizes the combination as semantic dataflow graphs, to give insights into holistic data dependence for I/O accesses
+- Data Flow Diagnostics, which explores three real-world scientific workflows from distinct domains, generating visualization of dataflow and I/O semantics, revealing potential I/O improvement opportunities, and empowered with optimizations suggested by DaYu's insights
 
 [1] DaYu (e.g. "Yu the Great") refers to a legendary Chinese king credited with taming floods through water control projects
 
 ------------------------------------------------------------------------------
+
 ## Contacts
 
 **Contacts**: (_firstname_._lastname_@pnnl.gov)
@@ -40,11 +41,11 @@ The DaYu framework comprises three primary components:
   - Anthony Kougkas (Illinois Institute of Technology)
   - Xian-He Sun (Illinois Institute of Technology)
 
-References
------------------------------------------------------------------------------
+## References
+
 - **Overview**: Nathan R. Tallent, Meng Tang, Zhen Peng, Jesun Firoz, Luanzheng Guo, Anthony Kougkas, and Xian-He Sun. "DataFlowDrs: Automating Performance Optimization of Data Flow Within HPC Workflows." IEEE Transactions on Parallel and Distributed Systems, Vol. 37, pp. 2619-2636, December 2026. ([doi: 10.1109/TPDS.2026.3722592](https://doi.org/10.1109/TPDS.2026.3722592))
 
-* **Specific**: Meng Tang, Jaime Cernuda, Jie Ye, Luanzheng Guo, Nathan R. Tallent, Anthony Kougkas, and Xian-He Sun. "DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics." Proc. of the 2024 IEEE Conf. on Cluster Computing, CLUSTER '24, pp. 357-369, IEEE, September 2024. ([doi: 10.1109/CLUSTER59578.2024.00038](https://doi.org/10.1109/CLUSTER59578.2024.00038))
+- **Specific**: Meng Tang, Jaime Cernuda, Jie Ye, Luanzheng Guo, Nathan R. Tallent, Anthony Kougkas, and Xian-He Sun. "DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics." Proc. of the 2024 IEEE Conf. on Cluster Computing, CLUSTER '24, pp. 357-369, IEEE, September 2024. ([doi: 10.1109/CLUSTER59578.2024.00038](https://doi.org/10.1109/CLUSTER59578.2024.00038))
 
 - For all related references, see [DataFlowDrs](https://github.com/pnnl/DataFlowDrs)
 
@@ -54,8 +55,7 @@ References
 BSD 2-clause license: [README-License.txt](/README-License.txt)
 
 
-Acknowledgements
------------------------------------------------------------------------------
+## Acknowledgements
 
 This work was supported by the U.S. Department of Energy's Office of
 Advanced Scientific Computing Research:
@@ -64,8 +64,8 @@ Advanced Scientific Computing Research:
 
 
 ------------------------------------------------------------------------------
-Details
-=============================================================================
+
+# Details
 
 DaYu's Tracker monitors hdf5 program I/O from the Virtual Object Layer (VOL) level as well as the Vitual File Driver (VFD) level.
 
@@ -76,12 +76,14 @@ The VFD monitors POSIX I/O operation during program, implemented with the HDF5 d
 
 
 # Workflow Sankey Diagram Showcase
+
 https://github.com/candiceT233/dayu-tracker/blob/main/flow_analysis/example_stat/README.md
 
 
 # How to use
 
 ## Prerequisite
+
 - HDF5 (1.14.+, require C, CXX and HDF5_HL_LIBRARIES) \
 Install with spack (suggest spack version 0.20.+)
 ```bash
@@ -95,6 +97,7 @@ python3 -m pip uninstall h5py; HDF5_MPI="OFF" HDF5_DIR=$YOUR_HDF5_PATH python3 -
 ```
 
 ## Installation
+
 ```bash
 
 git clone https://github.com/candiceT233/dayu-tracker.git
@@ -110,13 +113,19 @@ ccmake -DCMAKE_INSTALL_PREFIX=$YOUR_INSTALLATION_PATH ..
 
 ## Setup program task name
 Before running your program from a bash command, setup program task name two ways:
+
 ---
+
 1. Setup with bash environment variable:
+
 ```shell
 export CURR_TASK="my_program"
 ```
+
 ---
+
 2. Setup with file in `/tmp` directory:
+
 ```bash
 
 export WORKFLOW_NAME="my_program"
@@ -130,6 +139,7 @@ echo -n "$TASK_NAME" > $PATH_FOR_TASK_FILES/${WORKFLOW_NAME}_vol.curr_task
 ```
 
 ## Dynamically load VFD and VOL libraries
+
 ```bash
 TRACKER_SRC_DIR="../build/src" # dayu_tracker installation path
 schema_file_path="`pwd`" #your_path_to_store_log_files
@@ -143,6 +153,7 @@ python h5py_write_read.py
 ```
 
 ## Optiona: Dynamically load only VFD
+
 ```bash
 TRACKER_SRC_DIR="../build/src" # dayu_tracker installation path
 schema_file_path="`pwd`" #your_path_to_store_log_files
@@ -155,6 +166,7 @@ python h5py_write_read.py
 ```
 
 ## Optiona: Dynamically load only VOL
+
 ```bash
 TRACKER_SRC_DIR="../build/src" # dayu_tracker installation path
 schema_file_path="`pwd`" #your_path_to_store_log_files
@@ -165,8 +177,10 @@ python h5py_write_read.py
 ```
 
 # Use with Jarvis-cd
+
 1. Jarvis-cd can be installed and initialized following steps from [here](https://github.com/candiceT233/jarvis-cd).
 2. Add dayu-tracker to jarvis-cd
+
 ```bash
 jarvis repo add /home/mtang11/scripts/vol-tracker/jarvis
 ```
