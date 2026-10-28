@@ -43,7 +43,7 @@ The DaYu framework comprises three primary components:
 
 ## References
 
-- **Overview**: Nathan R. Tallent, Meng Tang, Zhen Peng, Jesun Firoz, Luanzheng Guo, Anthony Kougkas, and Xian-He Sun. "DataFlowDrs: Automating Performance Optimization of Data Flow Within HPC Workflows." IEEE Transactions on Parallel and Distributed Systems, Vol. 37, pp. 2619-2636, December 2026. ([doi: 10.1109/TPDS.2026.3722592](https://doi.org/10.1109/TPDS.2026.3722592))
+- **Overview Citation**: Nathan R. Tallent, Meng Tang, Zhen Peng, Jesun Firoz, Luanzheng Guo, Anthony Kougkas, and Xian-He Sun. "DataFlowDrs: Automating Performance Optimization of Data Flow Within HPC Workflows." IEEE Transactions on Parallel and Distributed Systems, Vol. 37, pp. 2619-2636, December 2026. ([doi: 10.1109/TPDS.2026.3722592](https://doi.org/10.1109/TPDS.2026.3722592))
 
 - **Specific**: Meng Tang, Jaime Cernuda, Jie Ye, Luanzheng Guo, Nathan R. Tallent, Anthony Kougkas, and Xian-He Sun. "DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics." Proc. of the 2024 IEEE Conf. on Cluster Computing, CLUSTER '24, pp. 357-369, IEEE, September 2024. ([doi: 10.1109/CLUSTER59578.2024.00038](https://doi.org/10.1109/CLUSTER59578.2024.00038))
 
@@ -112,6 +112,7 @@ ccmake -DCMAKE_INSTALL_PREFIX=$YOUR_INSTALLATION_PATH ..
 
 
 ## Setup program task name
+
 Before running your program from a bash command, setup program task name two ways:
 
 ---
